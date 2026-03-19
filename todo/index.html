@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="header-left">
+        <h1>Todo</h1>
+        <p id="date-display"></p>
+      </div>
+      <button id="theme-toggle" aria-label="ダークモードに切り替え">◑</button>
+    </header>
+
+    <div class="input-section">
+      <div class="input-row">
+        <input id="todo-input" type="text" placeholder="新しいタスクを追加... (Enter で追加)" autocomplete="off">
+        <button id="add-btn">追加</button>
+      </div>
+      <div class="input-meta">
+        <select id="priority-select" aria-label="優先度">
+          <option value="medium">優先度: 中</option>
+          <option value="high">優先度: 高</option>
+          <option value="low">優先度: 低</option>
+        </select>
+        <input id="due-date-input" type="date" aria-label="期限日">
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-tabs" role="group" aria-label="フィルター">
+        <button class="filter-btn active" data-filter="all">すべて</button>
+        <button class="filter-btn" data-filter="active">未完了</button>
+        <button class="filter-btn" data-filter="completed">完了済み</button>
+      </div>
+      <div class="sort-group">
+        <span class="sort-label">並び替え</span>
+        <select id="sort-select" aria-label="並び替え">
+          <option value="none">手動</option>
+          <option value="priority">優先度順</option>
+          <option value="dueDate">期限順</option>
+          <option value="createdAt">作成順</option>
+        </select>
+      </div>
+    </div>
+
+    <ul id="todo-list" role="list" aria-label="タスク一覧"></ul>
+
+    <footer>
+      <span id="remaining-count"></span>
+      <button id="clear-completed">完了済みを削除</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
