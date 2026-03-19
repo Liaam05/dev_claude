@@ -23,4 +23,12 @@ todo/
 
 ## 使い方
 
+### オンラインで使う
+
+GitHub Pages でホスティングされています。以下のURLからアクセスできます。
+
+https://liaam05.github.io/dev_claude/todo/
+
+### ローカルで使う
+
 `index.html` をブラウザで直接開くだけで動作します。サーバー不要です。

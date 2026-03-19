@@ -4,6 +4,10 @@
 
 バニラJS/HTML/CSS のみで構成したシンプルなTodoアプリ。外部ライブラリ・ビルドツール不使用。
 
+- リポジトリ: https://github.com/Liaam05/dev_claude
+- 公開URL: https://liaam05.github.io/dev_claude/todo/
+- デプロイ: GitHub Pages（master ブランチの `/` をソースに自動ビルド）
+
 ## アーキテクチャ
 
 ### 状態管理（script.js）
